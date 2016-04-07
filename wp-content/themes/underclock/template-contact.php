@@ -14,8 +14,6 @@
      </div>
   </div>
   <div class="fixed-container">
-    <div class="container">
-
     <div class="post" id="post-<?php the_ID(); ?>">
 
         <div class="page-containers container animated fadeInUp wow">          
@@ -37,6 +35,7 @@
             </div>
           </div> 
           <div class="col-xs-12 section">
+          <div class="container">
             <!-- Accordions -->
             <?php the_content(); ?>
           </div>

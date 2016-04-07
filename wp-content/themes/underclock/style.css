@@ -1342,10 +1342,6 @@ button{
 	.unslider-nav{
 	    display: none;
 	}
-	.ac-item{		
-	    min-height: 0px;
-	    margin-bottom: 20px;
-	}
 
 	.banner-subtitle{
 		display: none;
@@ -1421,6 +1417,11 @@ button{
 	}
 	.copyright-right{
 		margin-top: 0px;
+	}
+	
+	.ac-item{		
+	    min-height: 0px;
+	    margin-bottom: 20px;
 	}
 }
 

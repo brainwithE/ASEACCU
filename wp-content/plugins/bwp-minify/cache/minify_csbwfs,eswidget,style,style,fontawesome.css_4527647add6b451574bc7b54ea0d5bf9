@@ -383,12 +383,12 @@ a{border-top:1px solid white}.navbar-collapse{padding-left:0px}.menu-navigation{
 label{margin:0
 auto;font-size:24px}.sb-search{border:0px}.search-list-container
 h1{font-size:28px}.ac-item .img-container{height:auto}#indiv-banner{padding:75px
-50px}.slider-caption{width:80%;font-size:20px;bottom:auto}.unslider-arrow{top:50%}.unslider-nav{display:none}.ac-item{min-height:0px;margin-bottom:20px}.banner-subtitle{display:none}}@media (max-width: 767px){.img-container{height:auto}.cards-detail{height:auto}.menu-navigation li a:hover{border:none;background-color:#d35d13;color:white}.menu-navigation li.current-menu-item
+50px}.slider-caption{width:80%;font-size:20px;bottom:auto}.unslider-arrow{top:50%}.unslider-nav{display:none}.banner-subtitle{display:none}}@media (max-width: 767px){.img-container{height:auto}.cards-detail{height:auto}.menu-navigation li a:hover{border:none;background-color:#d35d13;color:white}.menu-navigation li.current-menu-item
 a{border:0px;background-color:#d35d13;color:white}.search-container{width:250px}#content{padding-bottom:650px}.footer{margin-top:-650px;height:650px}.footer-top{height:604px}.footer-logo-container{text-align:center}.footer-logo{width:80px;margin:0
 auto;margin-bottom:15px}.footer-top h4, .footer-top
 p{text-align:center;margin-bottom:30px}#subscription-container
 h4{margin-bottom:15px}.es_textbox{float:none}.es_textbox_class{padding:5px
-!important}.es_button{float:none}.es_textbox_button{margin-left:0px !important;width:100% !important}.copyright-left,.copyright-right{text-align:center}.copyright-left{margin-top:15px}.copyright-right{margin-top:0px}}@media (max-width: 480px){.fixed-container{margin-top:40%}.search-container{width:200px}.sb-search{min-width:30px}.sb-icon-search{padding:10px
+!important}.es_button{float:none}.es_textbox_button{margin-left:0px !important;width:100% !important}.copyright-left,.copyright-right{text-align:center}.copyright-left{margin-top:15px}.copyright-right{margin-top:0px}.ac-item{min-height:0px;margin-bottom:20px}}@media (max-width: 480px){.fixed-container{margin-top:40%}.search-container{width:200px}.sb-search{min-width:30px}.sb-icon-search{padding:10px
 12px}#content{padding-bottom:650px}.footer{margin-top:-650px;height:650px}.footer-top{height:624px;padding-right:0px;padding-left:0px}.banner{padding:60px
 30px}.search-none input[type="search"],
 .search-none input[type="submit"]{width:100%}#indiv-banner{padding:25px
