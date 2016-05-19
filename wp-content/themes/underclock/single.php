@@ -11,10 +11,7 @@ get_header(); ?>
 
 	<div id="indiv-banner" class="banner">
 	    <div class="container animated fadeIn wow">
-	        <label><?php the_title(); ?></label>
-	        <div class="banner-subtitle hidden-xs">
-	        <p>This is a paragraph that consist of words and text and punctuations like this! I would just like to fill this up with nonsense words. Blah blah, tralala..</p>
-	        </div>
+	        <label><?php the_title(); ?></label>	        
 	     </div>
   	</div>
   	<div class="fixed-container">
@@ -74,7 +71,7 @@ get_header(); ?>
 	                query_posts($args);
 	                if (have_posts()) : while (have_posts()) : the_post();
 	            
-	                if(has_post_thumbnail()){ $featured_img = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); } else { $featured_img = "http://lorempixel.com/300/250"; }
+	                if(has_post_thumbnail()){ $featured_img = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); } else { $featured_img = get_bloginfo('template_directory').'/images/default-img.jpg'; }
 	            ?>
 
 	                <a class="unlinkify" href="<?php the_permalink(); ?>">

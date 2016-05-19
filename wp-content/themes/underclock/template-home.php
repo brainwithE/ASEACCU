@@ -6,16 +6,23 @@
             <ul>
                     
                     <?php foreach (get_field('sliders') as $row2) :
-                          if($row2['slider_image']!=null){ $featured_img = $row2['slider_image']; } else { $featured_img = 'http://lorempixel.com/g/1360/900/'; }
+                        if($row2['slider_image']!=null){ 
+                            $featured_img = $row2['slider_image']; 
+                        } else {
+                           $featured_img = get_bloginfo('template_directory').'/images/default-slider-img.jpg'; 
+                        }
                     ?>
                       <li class="animated-delay-2 animated fadeIn wow">
                         <img class="img-responsive" src="<?php echo $featured_img; ?>" />
-                        <a class="slider-link" href="<?php if($row2['slider_image']!=null){ print $row2['slider_link']; } else { print '#'; } ?>" target="_blank"><div class="slider-caption"><?php print $row2['slider_title']; ?></div></a>
+                        <a class="slider-link" href="<?php if($row2['slider_image']!=null){ print $row2['slider_link']; } else { print '#'; } ?>" target="_blank">                        
+                          <?php 
+                            if($row2['slider_title']!=null){
+                              echo "<div class='slider-caption'>".$row2['slider_title']."</div>"; 
+                            }
+                          ?>
+                        </a>
                       </li>
                     <?php endforeach; ?>
-              
-              <!--<li><img class="img-responsive" src="images/slider.png" /></li>
-              <li><img class="img-responsive" src="images/slider.png" /></li>-->
             </ul>
           </div>
         
@@ -44,7 +51,7 @@
 
           <div class="section">
               <?php 
-                  $display_count = 4;
+                  $display_count = 6;
 
                   $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
@@ -57,11 +64,11 @@
                   query_posts($args);
                   if (have_posts()) : while (have_posts()) : the_post();
               
-                  if(has_post_thumbnail()){ $featured_img = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); } else { $featured_img = "http://lorempixel.com/550/440"; }
+                  if(has_post_thumbnail()){ $featured_img = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); } else { $featured_img = get_bloginfo('template_directory').'/images/default-img.jpg'; }
               ?>
 
                   <a class="unlinkify" href="<?php the_permalink(); ?>">
-                    <div class="col-xs-12 col-sm-6 cards animated fadeInUp wow">
+                    <div class="col-xs-12 col-sm-6 col-md-4 cards animated fadeInUp wow">
                       <div class="img-container hidden-xs">
                         <img class="animated animated-delay-2 fadeIn" src="<?php echo $featured_img; ?>">
                       </div>

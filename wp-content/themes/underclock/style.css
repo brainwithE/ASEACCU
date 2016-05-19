@@ -174,6 +174,8 @@ a{ cursor: pointer; }
 .img-container{
 	height: 300px;
 	overflow: hidden;
+	/*background: url("images/default-img.png") no-repeat center center;
+	background-size: 250px 200px;*/
 	background-color: #d35d13;
 }
 .img-container img{
@@ -182,7 +184,7 @@ a{ cursor: pointer; }
 }
 
 .cards-detail{
-	height: 300px;
+	height: 375px;
 	overflow: hidden;
 	padding: 15px;
 	border: 1px solid #d7d7d7;
@@ -349,6 +351,11 @@ button{
 	list-style: none;
 }
 
+.sample-btn:after{
+	border:1px solid red;
+	content:"\f061";
+}
+
 /* social sidebar plugin */
 .csbwfs-sbutton a:hover img, .csbwfs-sbutton img{
 	width: 40px !important;
@@ -396,6 +403,14 @@ button{
   	background-color: #a3470d;
   	overflow: hidden;	
   	width: 100%;
+  }
+
+  .footer-logo-container{
+  	color: #FFFFFF;
+    text-shadow: 1px 1px 2px #1f1f1f;
+    padding: 15px 5px;
+    font-size: 17px;
+    font-family: 'Raleway-Light';
   }
 
   body:before{
@@ -480,6 +495,29 @@ button{
 .logo-container .logo-full{
 	padding: 10px 0px;
 	width: 45px;
+}
+
+.logo-container a{
+	font-size: 30px;
+    font-family: 'Raleway-Light';
+    display: block;
+    padding: 8px 0;
+    color: #d35d13;
+    text-shadow: 1px 1px #ccc;
+}
+
+.logo-container a:hover{
+	text-decoration: none;
+}
+
+.sublogo{
+	font-family: 'Raleway-Light';
+    background: #d35d13;
+    color: white;
+}
+
+.sublogo div{
+	padding-left: 30px;
 }
 
 /* BANNER */
@@ -1148,12 +1186,6 @@ button{
 
 /* MEDIA QUERIES */
 
-/*@media(max-height: 768px){
-	.unslider img{
-		height: 600px !important;
-	}
-}*/
-
 /* tablet portrait view */
 @media (max-width: 768px) and (max-height: 1024px){
 	.slider-caption{
@@ -1228,8 +1260,18 @@ button{
 }
 
 
+@media (max-width: 1200px){
+	.cards-detail {
+		height: 470px;
+	}
+	.suggested-cards .cards-detail h2{
+		font-size: 20px;
+	}
+}
+
+
 /* ipad */
-@media (max-width: 1024px){
+@media (max-width: 1024px){	
 	#header-search-popup{
 		right: 7%;
 	}
@@ -1243,6 +1285,7 @@ button{
 	.menu-navigation li a{
 		padding: 15px 7px;
 		font-size: 10px;
+		min-width: 60px;
 	} 
 	.btn-border-orange{
 		padding: 5px;
@@ -1271,6 +1314,9 @@ button{
 	}
 	.slider-caption{
 		padding: 10px;
+	}
+	.logo-container a{
+		font-size: 25px;
 	}
 }
 
@@ -1382,10 +1428,11 @@ button{
 		height: 604px;
 	}
 	.footer-logo-container{
-		text-align: center;
+		text-align: center;		
+		padding: 0;
+		font-size: 30px;
 	}
 	.footer-logo{
-		width: 80px;
 		margin: 0 auto;
 		margin-bottom: 15px;
 	}
@@ -1536,3 +1583,12 @@ button{
 	}
 }
 
+
+/* Fix: image wrapping */
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto;}

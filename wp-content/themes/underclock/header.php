@@ -40,15 +40,19 @@
 			<div id="content">
 
 				<div class="header">
+					<div class="col-sm-12 hidden-xs sublogo">
+						<div class="container">
+						The Association of Southeast and East Asian Catholic Colleges and Universities
+						</div>
+					</div>
 					<div class="container">
-
-						<div class="col-xs-2 col-sm-1 col-md-2">
+						<div class="col-xs-2 col-sm-2 col-md-2">
 							<div class="logo-container">
-								<a href="<?php echo esc_url(home_url('/')); ?>"><img class="logo-full" class="img-responsive" src="<?php echo bloginfo('template_directory'); ?>/images/logo-full.png" /></a>
+								<a href="<?php echo esc_url(home_url('/')); ?>"><?php dynamic_sidebar('footer-logo'); ?></a>
 							</div>
 						</div>
 
-						<div class="col-xs-10 col-sm-11 hidden-md hidden-lg">
+						<div class="col-xs-10 col-sm-10 hidden-md hidden-lg">
 
 							<div class="navbar-header">
 				              

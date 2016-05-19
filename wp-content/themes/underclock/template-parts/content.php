@@ -9,12 +9,12 @@
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php  if(has_post_thumbnail()){ $featured_img = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); } else { $featured_img = "http://lorempixel.com/1360/600/"; } ?>
+	<?php  if(has_post_thumbnail()){ $featured_img = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); } else { $featured_img = get_bloginfo('template_directory').'/images/default-img.jpg'; } ?>
     
 
     <div class="post" id="post-<?php the_ID(); ?>">
 
-      <div class="individual-container container">
+      <div class="individual-container">
         
         <span class="animated fadeIn wow"><?php the_content(); ?></span>
 
